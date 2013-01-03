@@ -52,6 +52,16 @@ class HydratorMockStatement implements \Doctrine\DBAL\Driver\Statement
     }
 
     /**
+    * setFetchMode
+    * Set the fetch mode to use while iterating this statement.
+    *
+    * @param integer $fetchMode
+    */
+    public function setFetchMode($fetchMode, $arg2 = null, $arg3 = null)
+    {
+    }
+
+    /**
      * Closes the cursor, enabling the statement to be executed again.
      *
      * @return boolean
